@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Web de Prueba</title>
+    <title>Info Discord</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -50,16 +50,23 @@
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
-            background-color: #55c34d;
             color: white;
             font-size: 1.2em;
             cursor: pointer;
         }
+        .discord-button {
+            background-color: #4a90e2; /* Azul más suave para el botón de Discord */
+        }
+        .version-button {
+            background-color: #55c34d; /* Verde para el botón de V1.0 */
+        }
     </style>
 </head>
 <body>
-    <h1>Bienvenido a la web Oficial de La Cueva Chill</h1>
-    <button onclick="document.querySelector('.update-content').scrollIntoView();">V1.0</button>
+    <h1>Nuestro Server De Discord</h1>
+    <button class="discord-button" onclick="window.open('https://discord.gg/86e6SdYWVS', '_blank');">Discord</button>
+    <h1>Actualizaciones de nuestro Servidor</h1>
+    <button class="version-button" onclick="document.querySelector('.update-content').scrollIntoView();">V1.0</button>
     <div class="update-box">
         <h2>Registrar Actualizaciones</h2>
         <div class="update-content">
